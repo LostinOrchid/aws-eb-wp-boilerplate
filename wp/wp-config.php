@@ -1,7 +1,7 @@
 <?php
 
 function env($env, $default = null) {
-    return isset($_SERVER[$env]) ? $_SERVER[$env] : $$default;
+    return isset($_SERVER[$env]) ? $_SERVER[$env] : $default;
 }
 
 // Avoid infinite redirect on servers under ELB.
